@@ -14,6 +14,7 @@ object Main {
     Outwatch.renderInto[SyncIO]("body", app).unsafeRunSync()
 
   def app = {
+    import svg._
     a("Hello World!")
   }
 }
